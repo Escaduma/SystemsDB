@@ -1,0 +1,12 @@
+To create a new database you just need to use the command CREATE DATABASE name_Database;
+
+A table can be make it by using the command CREATE TABLE name_table(); --> inside the parenthesis the different type of data is going to be,
+for example hire_date date; --> this command contains the name of the data and then the type, thsi is gonna be a column of the table.
+There different types of data like text, intergers, decimals, and dates, these are used to define the type of data in the column and if you did not 
+put the right information, the program will send an error.
+
+There are other types of data like:
+bigserial: An interger type that auto-increments every time you add a row to the table (Ex. id bigserial)
+varchar: text column with a maximum lenght specified by the number in parenteses (Ex. school varchar(50.
+
+The semicolon at the end of each command is important because it tells to the program where the command ends, and it is also a good habit to form.
