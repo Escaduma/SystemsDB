@@ -29,6 +29,6 @@ VALUES
 (60, 'Satine', 2, 5),
 (25, 'Rufino', 3, 8),
 (30 'carlson' 5 9); -->If it does not contain commas the program will tell that there is an error, because it doesn't know where each part of the info is
--- and also there are different types of data.
+-- and also there are different types of data, the error doesn't insert all the info in the table.
 
 select * from animals;
