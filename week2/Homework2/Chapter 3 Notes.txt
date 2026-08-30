@@ -1,0 +1,19 @@
+The chapter is focused in the command SELECT
+SELECT -> select info from a table and show what you ask for.
+This command can show the info from the table by using * (it is like telling to show all the info in the table) or specifing the name of the columns you want to show.
+Ex. SELECT * (or coulmn name) FROM  table_name;
+
+TABLE table_name; -> Other way of see the rows in a table
+
+Then introduces:
+ORDER BY -> Used to show the data of the table in a specific order (could be by date or salary or both)
+Ex. SELECT column_name FROM table_name ORDER BY column_name DESC;
+Note: Numbers can be used instead of the column name
+
+And then it shows more concepts that could be used in select like  DISTINCT, WHERE and the differents operators that can be used in WHERE ( =, <>, <, >, <=, >=, BETWEEN, IN, LIKE, ILIKE, NOT),
+and also the use of AND and OR, and the functionality that these can aport.
+
+Sintax: SELECT column_names FROM table_name WHERE criteria ORDER BY column_names;
+
+Question:
+Can I change the order of the commands, like "select * from .. where ... order by..." or it needs to go in the specific order given? 
