@@ -1,5 +1,12 @@
--- CREATE TABLE games (
---     id integer GENERATED ALWAYS AS IDENTITY,
+-- =============================================
+-- Week 3 Lab
+-- Beginning Data Exploration with SELECT
+-- Name: Macie Escalera
+-- =============================================
+
+
+CREATE TABLE games (
+    id integer GENERATED ALWAYS AS IDENTITY,
 --     title varchar(100),
 --     genre varchar(50),
 --     platform varchar(50),
