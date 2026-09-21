@@ -67,3 +67,12 @@ FROM books
 WHERE in_stock='true';
 
 --Part 6 - Quick Skim
+
+--2 New Concepts
+--Copy: Used to importa data that comes from a file that you have saved in the computer
+-- I learnn that you can find the media with using the different commands and knowing how to put them
+
+--Short Reflection
+-- Which new data type did you find the most useful? I think the update because it can change data and add data to the table, which is useful when a mistake is made
+-- Why did you choose the data types you used? Because i thought they would fit with the type of data that i wanted to add
+-- What is the difference between ALTER TABLE and UPDATE? Alter can change names of columns in the table, when update is just to change data in the table or add
