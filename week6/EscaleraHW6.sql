@@ -38,3 +38,5 @@ WHERE founded>2015;
 SELECT org_name, founded
 FROM organizations
 ORDER BY founded ASC;
+
+-- A new term learned was the join, which helsp to combine information fo two tables in one, it has 4 options
