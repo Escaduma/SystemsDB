@@ -10,7 +10,7 @@
 -- GROUP BY category
 -- ORDER BY avg_stock;
 
--- REPLACE VIEW product_summary AS
+-- CREATE VIEW product_summary AS
 -- SELECT product_name, brand, price,
 -- UPPER(product_name) AS upperName,
 -- LOWER(brand) AS lowBrand
