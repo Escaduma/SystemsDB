@@ -12,40 +12,40 @@
 -- but each child points to one parent
 
 -- Creating the parent table (Customers)
--- CREATE TABLE customers(
--- customer_id serial PRIMARY KEY,
--- "name" text,
--- email text,
--- city text);
+CREATE TABLE customers(
+customer_id serial PRIMARY KEY,
+"name" text,
+email text,
+city text);
 
 --Serial automatically numbers each new record
 -- PRIMARY KEY ensures each id is unique and not null
 
 -- Creating the Child Table (Orders)
--- CREATE TABLE orders(
--- "id" serial PRIMARY KEY,
--- customer_id int,
--- product text,
--- total numeric(10,2),
--- FOREIGN KEY(customer_id) REFERENCES customers(customer_id)
--- );
+CREATE TABLE orders(
+"id" serial PRIMARY KEY,
+customer_id int,
+product text,
+total numeric(10,2),
+FOREIGN KEY(customer_id) REFERENCES customers(customer_id)
+);
 
 -- Customer_id linked each order back to a customer
 -- The FK constraint prevents orphan record(You can create an order for a non-existent Customer)
 
 -- Inserting sample data
--- INSERT INTO customers("name", email, city)
--- VALUES 
--- ('Alice', 'alice@email.com', 'Boise'),
--- ('Brian', 'brian@email.com', 'Twin Falls'),
--- ('Carmen', 'carmen@email.com', 'Jerome');
+INSERT INTO customers("name", email, city)
+VALUES 
+('Alice', 'alice@email.com', 'Boise'),
+('Brian', 'brian@email.com', 'Twin Falls'),
+('Carmen', 'carmen@email.com', 'Jerome');
 
--- INSERT INTO  orders (customer_id, product, total)
--- VALUES
--- (1, 'Laptop', 999.99),
--- (1, 'Mouse', 25.50),
--- (2, 'Headphones', 89.99),
--- (3, 'Monitor', 199.99);
+INSERT INTO  orders (customer_id, product, total)
+VALUES
+(1, 'Laptop', 999.99),
+(1, 'Mouse', 25.50),
+(2, 'Headphones', 89.99),
+(3, 'Monitor', 199.99);
 
 -- Each order's customer_id points to an existing customer in customers.id
 -- Viewing the Relationship with a JOIN
